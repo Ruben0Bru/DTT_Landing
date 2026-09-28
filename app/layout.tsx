@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://destinotierralta.com"),
   title: "Destino Tierralta Travel | Turismo de Naturaleza y Aventura",
   description: "Descubre el Alto Sinú: Kayak, senderismo, cultura Emberá y más. Reserva tu experiencia en Tierralta, Córdoba.",
   openGraph: {

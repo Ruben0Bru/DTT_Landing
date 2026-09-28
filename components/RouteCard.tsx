@@ -25,9 +25,11 @@ export default function RouteCard({ route, onOpenModal }: RouteCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {/* Badge de Categoría (usando el primer tag) */}
-        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-green uppercase tracking-wide shadow-sm">
-          {route.tags[0]}
-        </div>
+        {route.tags && route.tags.length > 0 && (
+          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-green uppercase tracking-wide shadow-sm">
+            {route.tags[0]}
+          </div>
+        )}
       </div>
 
       {/* Contenido de la Tarjeta */}

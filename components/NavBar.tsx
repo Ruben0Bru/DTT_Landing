@@ -115,6 +115,9 @@ export default function Navbar() {
           ))}
           <a 
             href="https://wa.me/573188890437"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
             className="block w-full text-center mt-4 bg-brand-green text-white px-3 py-3 rounded-lg font-bold"
           >
             Contactar por WhatsApp

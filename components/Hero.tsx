@@ -46,6 +46,7 @@ export default function Hero() {
           <a 
             href="https://wa.me/573188890437"
             target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-lg font-bold text-lg transition-all"
           >
             Solicitar Portafolio

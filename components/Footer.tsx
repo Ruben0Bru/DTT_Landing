@@ -27,7 +27,7 @@ export default function Footer() {
               <span>destinotierralta26@gmail.com</span>
             </a>
             {/* Si tienen Instagram, iría aquí */}
-            <a href="https://www.instagram.com/destinotierraltatravel/" about='_blank' className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/destinotierraltatravel/" target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
               <Instagram size={18} />
               <span>@destinotierralta</span>
             </a>

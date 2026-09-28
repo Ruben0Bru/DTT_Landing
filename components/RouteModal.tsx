@@ -12,11 +12,19 @@ interface RouteModalProps {
 
 export default function RouteModal({ route, onClose }: RouteModalProps) {
   useEffect(() => {
+    // Bloquear scroll del body al abrir el modal
+    document.body.style.overflow = 'hidden';
+
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
+
+    return () => {
+      // Restaurar scroll al cerrar el modal
+      document.body.style.overflow = 'unset';
+      window.removeEventListener('keydown', handleEsc);
+    };
   }, [onClose]);
 
   const whatsappLink = `https://wa.me/573188890437?text=${encodeURIComponent(`Hola, me interesa la experiencia: ${route.title}`)}`;
